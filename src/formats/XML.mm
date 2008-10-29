@@ -15,13 +15,13 @@ NSDate* date_from_iso_8601 (NSString* str)
 	return [sISO8601 dateFromString:str];
 }
 
-@interface ARSXMLFormat (Private)
+@interface ORXMLFormat (Private)
 - (id)decodeElement:(id)element;
 - (NSArray*)decodeArray:(id)element;
 - (NSDictionary*)decodeDictionary:(id)inElement;
 @end
 
-@implementation ARSXMLFormat
+@implementation ORXMLFormat
 - (NSString*)extension
 { return @"xml"; }
 

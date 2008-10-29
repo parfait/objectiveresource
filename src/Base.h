@@ -1,12 +1,12 @@
 #import "GlobalHeader.h"
 
-enum ARSAttributeType
+enum ORAttributeType
 {
-	kARSAttributeTypeString,
-	kARSAttributeTypeNumber,
-	kARSAttributeTypeBoolean,
-	kARSAttributeTypeDate,
-	kARSAttributeTypeHTMLText, // This should be moved to the app really…
+	kORAttributeTypeString,
+	kORAttributeTypeNumber,
+	kORAttributeTypeBoolean,
+	kORAttributeTypeDate,
+	kORAttributeTypeHTMLText, // This should be moved to the app really…
 };
 
 @interface ObjectiveResource : NSObject
@@ -26,7 +26,7 @@ enum ARSAttributeType
 + (id)findAll:(id)options;
 
 - (NSString*)title;
-- (ARSAttributeType)typeForAttribute:(NSString*)attributeName;
+- (ORAttributeType)typeForAttribute:(NSString*)attributeName;
 
 - (void)reload;
 @end

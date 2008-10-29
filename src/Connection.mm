@@ -1,10 +1,10 @@
 #import "Connection.h"
 
-@interface ARSConnection ()
-@property (retain) id<ARSFormat> format;
+@interface ORConnection ()
+@property (retain) id<ORFormat> format;
 @end
 
-@implementation ARSConnection
+@implementation ORConnection
 // ==================
 // = Setup/Teardown =
 // ==================
@@ -18,7 +18,7 @@
 		self.password = nil;
 		self.site     = reqSite;
 		if([reqFormat isEqualToString:@"xml"])
-			format = [ARSXMLFormat new];
+			format = [ORXMLFormat new];
 		else
 		{
 			NSLog(@"Unknown format: %@", reqFormat);

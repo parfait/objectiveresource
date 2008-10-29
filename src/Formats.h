@@ -1,6 +1,6 @@
 #import "GlobalHeader.h"
 
-@protocol ARSFormat
+@protocol ORFormat
 - (NSString*)extension;
 - (NSString*)mimeType;
 - (NSString*)encode:(id)data;

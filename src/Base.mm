@@ -40,26 +40,26 @@ static NSMutableDictionary const* connections = [[NSMutableDictionary alloc] ini
 	return [NSString stringWithFormat:@"%@.%@", [self collectionName], @"xml"];
 }
 
-- (ARSAttributeType)typeForAttribute:(NSString*)attributeName;
+- (ORAttributeType)typeForAttribute:(NSString*)attributeName;
 {
 	id value = [self valueForKey:attributeName];
 	if([value isKindOfClass:[NSNumber class]])
 	{
 		if(!strcmp([value objCType], @encode(BOOL)))
-			return kARSAttributeTypeBoolean;
+			return kORAttributeTypeBoolean;
 		else
-			return kARSAttributeTypeNumber;
+			return kORAttributeTypeNumber;
 	}
 	else if([value isKindOfClass:[NSDate class]])
-		return kARSAttributeTypeDate;
-	return kARSAttributeTypeString;
+		return kORAttributeTypeDate;
+	return kORAttributeTypeString;
 }
 
 + (id)connection
 {
 	if(![connections objectForKey:self])
 	{
-		ARSConnection* connection = [[ARSConnection alloc] initToSite:[[self class] baseURL] format:@"xml"];
+		ORConnection* connection = [[ORConnection alloc] initToSite:[[self class] baseURL] format:@"xml"];
 		if([self user])
 			connection.user = [self user];
 		if([self password])

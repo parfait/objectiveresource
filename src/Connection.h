@@ -1,12 +1,12 @@
 #import "GlobalHeader.h"
 #import "Formats.h"
 
-@interface ARSConnection : NSObject
+@interface ORConnection : NSObject
 {
 	NSURL* site;
 	NSString* user;
 	NSString* password;
-	id<ARSFormat> format;
+	id<ORFormat> format;
 }
 @property (retain) id site;
 @property (retain) NSString* user;
