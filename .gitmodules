@@ -1,0 +1,3 @@
+[submodule "ext/Inflector"]
+	path = ext/Inflector
+	url = git://github.com/ciaran/inflector.git
