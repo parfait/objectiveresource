@@ -45,4 +45,9 @@
 	[product reload];
 	assertThat([product valueForKey:@"title"], equalTo(@"Test"));
 }
+
+- (void)testInvalidFind
+{
+	STAssertThrows([Product find:255], @"Exception should be thrown for missing resource");
+}
 @end

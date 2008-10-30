@@ -1,5 +1,6 @@
 #import "GlobalHeader.h"
 #import "Formats.h"
+#import "ConnectionErrors.h"
 
 @interface ORConnection : NSObject
 {

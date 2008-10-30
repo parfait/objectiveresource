@@ -95,6 +95,8 @@
 	NSError* error;
 	NSHTTPURLResponse* response;
 	NSData* data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+	if(response.statusCode == 404)
+		[[ORResourceNotFound exceptionWithResponse:response] raise];
 	return [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
 }
 

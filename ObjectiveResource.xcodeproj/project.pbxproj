@@ -39,6 +39,8 @@
 		910B9A690EB89A20009E4C0E /* SubclassTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 910B9A660EB89A20009E4C0E /* SubclassTest.mm */; };
 		910B9A830EB89B38009E4C0E /* XML.h in Headers */ = {isa = PBXBuildFile; fileRef = 910B9A810EB89B38009E4C0E /* XML.h */; };
 		910B9A840EB89B38009E4C0E /* XML.mm in Sources */ = {isa = PBXBuildFile; fileRef = 910B9A820EB89B38009E4C0E /* XML.mm */; };
+		910B9E790EB9B962009E4C0E /* ConnectionErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 910B9E770EB9B962009E4C0E /* ConnectionErrors.h */; };
+		910B9E7A0EB9B962009E4C0E /* ConnectionErrors.mm in Sources */ = {isa = PBXBuildFile; fileRef = 910B9E780EB9B962009E4C0E /* ConnectionErrors.mm */; };
 		915A40750EB33E4600C3D357 /* ObjectiveResource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* ObjectiveResource.framework */; };
 		915A40840EB33EF100C3D357 /* hamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915A40830EB33EF100C3D357 /* hamcrest.framework */; };
 /* End PBXBuildFile section */
@@ -94,6 +96,8 @@
 		910B9A740EB89A36009E4C0E /* Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		910B9A810EB89B38009E4C0E /* XML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XML.h; sourceTree = "<group>"; };
 		910B9A820EB89B38009E4C0E /* XML.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XML.mm; sourceTree = "<group>"; };
+		910B9E770EB9B962009E4C0E /* ConnectionErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionErrors.h; sourceTree = "<group>"; };
+		910B9E780EB9B962009E4C0E /* ConnectionErrors.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ConnectionErrors.mm; sourceTree = "<group>"; };
 		915A3EC70EB2466600C3D357 /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		915A40830EB33EF100C3D357 /* hamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = hamcrest.framework; path = /Library/Frameworks/hamcrest.framework; sourceTree = "<absolute>"; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -222,6 +226,8 @@
 		910B9A4D0EB89A14009E4C0E /* src */ = {
 			isa = PBXGroup;
 			children = (
+				910B9E770EB9B962009E4C0E /* ConnectionErrors.h */,
+				910B9E780EB9B962009E4C0E /* ConnectionErrors.mm */,
 				910B9A4E0EB89A14009E4C0E /* ObjectiveResource.h */,
 				910B9A4F0EB89A14009E4C0E /* ObjectiveResource_Prefix.pch */,
 				910B9A500EB89A14009E4C0E /* Base.h */,
@@ -289,6 +295,7 @@
 				910B9A5C0EB89A14009E4C0E /* Formats.h in Headers */,
 				910B9A5D0EB89A14009E4C0E /* GlobalHeader.h in Headers */,
 				910B9A830EB89B38009E4C0E /* XML.h in Headers */,
+				910B9E790EB9B962009E4C0E /* ConnectionErrors.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +409,7 @@
 				910B9A590EB89A14009E4C0E /* Base.mm in Sources */,
 				910B9A5B0EB89A14009E4C0E /* Connection.mm in Sources */,
 				910B9A840EB89B38009E4C0E /* XML.mm in Sources */,
+				910B9E7A0EB9B962009E4C0E /* ConnectionErrors.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
