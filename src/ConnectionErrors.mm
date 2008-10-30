@@ -3,7 +3,9 @@
 @implementation ORConnectionError
 + (ORConnectionError*)exceptionWithResponse:(NSHTTPURLResponse*)response message:(NSString*)message;
 {
-	return [[[[self class] alloc] initWithName:[[self class] description] reason:message userInfo:[NSDictionary dictionaryWithObject:response forKey:@"response"]] autorelease];
+	return [[[[self class] alloc] initWithName:[[self class] description]
+                                       reason:message
+                                     userInfo:[NSDictionary dictionaryWithObject:(response ?: [NSNull null]) forKey:@"response"]] autorelease];
 }
 
 + (ORConnectionError*)exceptionWithResponse:(NSHTTPURLResponse*)response;
