@@ -1,7 +1,7 @@
 #import <SenTestingKit/SenTestingKit.h>
+#import "ObjectiveResourceTest.h"
 
-
-@interface SubclassTest : SenTestCase
+@interface SubclassTest : ObjectiveResourceTest
 {
 }
 @end

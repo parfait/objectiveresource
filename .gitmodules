@@ -1,3 +1,6 @@
 [submodule "ext/Inflector"]
 	path = ext/Inflector
 	url = git://github.com/ciaran/inflector.git
+[submodule "test/app"]
+	path = test/app
+	url = git@github.com:parfait/restful-iphone-app-sample-site.git

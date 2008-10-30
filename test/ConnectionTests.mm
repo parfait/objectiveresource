@@ -5,6 +5,7 @@
 @implementation ConnectionTests
 - (void)setUp
 {
+	[super setUp];
 	connection = [[ORConnection alloc] initToSite:TEST_SITE_URL format:@"xml"];
 }
 

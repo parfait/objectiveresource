@@ -41,6 +41,7 @@
 		910B9A840EB89B38009E4C0E /* XML.mm in Sources */ = {isa = PBXBuildFile; fileRef = 910B9A820EB89B38009E4C0E /* XML.mm */; };
 		910B9E790EB9B962009E4C0E /* ConnectionErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 910B9E770EB9B962009E4C0E /* ConnectionErrors.h */; };
 		910B9E7A0EB9B962009E4C0E /* ConnectionErrors.mm in Sources */ = {isa = PBXBuildFile; fileRef = 910B9E780EB9B962009E4C0E /* ConnectionErrors.mm */; };
+		910B9EAB0EB9C16E009E4C0E /* ObjectiveResourceTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 910B9EAA0EB9C16E009E4C0E /* ObjectiveResourceTest.mm */; };
 		915A40750EB33E4600C3D357 /* ObjectiveResource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* ObjectiveResource.framework */; };
 		915A40840EB33EF100C3D357 /* hamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915A40830EB33EF100C3D357 /* hamcrest.framework */; };
 /* End PBXBuildFile section */
@@ -98,6 +99,8 @@
 		910B9A820EB89B38009E4C0E /* XML.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XML.mm; sourceTree = "<group>"; };
 		910B9E770EB9B962009E4C0E /* ConnectionErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionErrors.h; sourceTree = "<group>"; };
 		910B9E780EB9B962009E4C0E /* ConnectionErrors.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ConnectionErrors.mm; sourceTree = "<group>"; };
+		910B9EA90EB9C16E009E4C0E /* ObjectiveResourceTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveResourceTest.h; sourceTree = "<group>"; };
+		910B9EAA0EB9C16E009E4C0E /* ObjectiveResourceTest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjectiveResourceTest.mm; sourceTree = "<group>"; };
 		915A3EC70EB2466600C3D357 /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		915A40830EB33EF100C3D357 /* hamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = hamcrest.framework; path = /Library/Frameworks/hamcrest.framework; sourceTree = "<absolute>"; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -250,6 +253,8 @@
 				910B9A640EB89A20009E4C0E /* ConnectionTests.mm */,
 				910B9A650EB89A20009E4C0E /* SubclassTest.h */,
 				910B9A660EB89A20009E4C0E /* SubclassTest.mm */,
+				910B9EA90EB9C16E009E4C0E /* ObjectiveResourceTest.h */,
+				910B9EAA0EB9C16E009E4C0E /* ObjectiveResourceTest.mm */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -420,6 +425,7 @@
 				910B9A670EB89A20009E4C0E /* BasicTest.mm in Sources */,
 				910B9A680EB89A20009E4C0E /* ConnectionTests.mm in Sources */,
 				910B9A690EB89A20009E4C0E /* SubclassTest.mm in Sources */,
+				910B9EAB0EB9C16E009E4C0E /* ObjectiveResourceTest.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
