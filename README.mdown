@@ -1,0 +1,33 @@
+# ObjectiveResource
+
+ObjectiveResource is an Objective-C implementation of ActiveResource, which allows interaction with RESTful Ruby on Rails applications.
+
+It’s still a work in progress, and quite early on. There is no support for modifying records yet, and there is no relationship support.
+If you need improvements to the framework, either make them yourself and send a pull request so you can contribute it back :) or send me a message and I’ll see if I can help.
+
+## Usage
+
+To use it, just make a subclass for your model:
+
+	@interface Product : ObjectiveResource
+	@end
+
+And implement (at least) `+baseURL` in your subclass:
+
+	@implementation Product
+	+ (NSString*)baseURL  { return @"http://example.com"; }
+	@end
+
+There are a few other class methods you can override for configuration, see the interface in `Base.h`.
+
+Then you can use it to fetch records:
+
+	NSArray* products = [Product findAll:nil];
+
+Or a record with a specific ID:
+
+	Product* product = [Product find:1];
+	NSString* title  = [product valueForKey:@"title"];
+
+an exception will be thrown if the record is not found (or if there is a problem with the connection or resource).
+
