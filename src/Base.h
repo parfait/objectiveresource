@@ -6,7 +6,6 @@ enum ORAttributeType
 	kORAttributeTypeNumber,
 	kORAttributeTypeBoolean,
 	kORAttributeTypeDate,
-	kORAttributeTypeHTMLText, // This should be moved to the app really…
 };
 
 @interface ObjectiveResource : NSObject
